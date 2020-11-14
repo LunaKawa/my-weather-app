@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import WeatherData from "./WeatherData";
-import Loader from 'react-loader-spinner'
+
 export default function SearchEngine() {
   let [city, setCity] = useState("");
   let [message, showMessage] = useState("");
@@ -20,13 +20,7 @@ export default function SearchEngine() {
         <input type="submit" />
       </form>
       <h2>{message}</h2>
-      <Loader
-         type="TailSpin
-         "
-         color="#00BFFF"
-         height={100}
-         width={100}
-         timeout={3000}/>
+    
     </div>
   );
 }
