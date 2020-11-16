@@ -1,25 +1,21 @@
 import React from "react";
-import "./App.css";
 
 
-import Header from "./Header";
-import DisplayConsole from "./DisplayConsole";
+import Weather from "./Weather"
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <div className="card">
-        <div className="card-body">
-          <div className="row">
-            <div className="col">
-              <Header />
-              <DisplayConsole />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <div className="containter">
+        <Weather />
+         <footer>
+           This app was coded by <a href="https://www.linkedin.com/in/luna-kawahara-109b8b118/" target="_blank">Luna Kawahara</a> and is <a href="https://github.com/LunaKawa/my-weather-app" target ="_blank">open-source</a>
+         </footer>
+       </div>
+     </div>
+     
   );
 }
 
-export default App;
+
