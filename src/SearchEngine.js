@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import WeatherData from "./WeatherData";
+import Conversion from "./Conversion";
+import "./searchengine.css";
 
 export default function SearchEngine() {
   let [city, setCity] = useState("");
@@ -14,10 +16,14 @@ export default function SearchEngine() {
   }
 
   return (
-    <div>
+    <div className="searchEngine">
       <form onSubmit={handleSubmit}>
-        <input type="search" placeholder="search.." onChange={updateCity} />
-        <input type="submit" />
+        <input className="search" type="search" placeholder="search.." onChange={updateCity} />
+        <button type="button" className="btn btn-outline-light">
+          <i class="fas fa-map-marker-alt"></i>
+          Location
+        </button>
+        <Conversion />
       </form>
       <h2>{message}</h2>
     
