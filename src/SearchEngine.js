@@ -18,7 +18,12 @@ export default function SearchEngine() {
   return (
     <div className="searchEngine">
       <form onSubmit={handleSubmit}>
-        <input className="search" type="search" placeholder="search.." onChange={updateCity} />
+        <input
+          className="search"
+          type="search"
+          placeholder="search.."
+          onChange={updateCity}
+        />
         <button type="button" className="btn btn-outline-light">
           <i class="fas fa-map-marker-alt"></i>
           Location
@@ -26,7 +31,6 @@ export default function SearchEngine() {
         <Conversion />
       </form>
       <h2>{message}</h2>
-    
     </div>
   );
 }

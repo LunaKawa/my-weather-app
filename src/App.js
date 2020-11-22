@@ -1,21 +1,26 @@
 import React from "react";
 
-
-import Weather from "./Weather"
-
+import Weather from "./Weather";
 
 export default function App() {
   return (
     <div className="App">
       <div className="containter">
         <Weather />
-         <footer>
-           This app was coded by <a href="https://www.linkedin.com/in/luna-kawahara-109b8b118/" target="_blank">Luna Kawahara</a> and is <a href="https://github.com/LunaKawa/my-weather-app" target ="_blank">open-source</a>
-         </footer>
-       </div>
-     </div>
-     
+        <footer>
+          This app was coded by{" "}
+          <a
+            href="https://www.linkedin.com/in/luna-kawahara-109b8b118/"
+            target="_blank"
+          >
+            Luna Kawahara
+          </a>{" "}
+          and is{" "}
+          <a href="https://github.com/LunaKawa/my-weather-app" target="_blank">
+            open-source
+          </a>
+        </footer>
+      </div>
+    </div>
   );
 }
-
-
