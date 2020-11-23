@@ -1,13 +1,6 @@
-.card {
-  background-image: linear-gradient(
-    to top,
-    #22e1ff 0%,
-    #1d8fe1 48%,
-    #625eb1 100%
-  );
-  margin: 20px auto;
+.weather {
   width: 90%;
-  color: white;
+  color: black;
   border: none;
   border-radius: 25px;
   box-shadow: 9px 11px 5px #0000000d;
