@@ -9,16 +9,18 @@ import "./weather.css";
 
 export default function Weather() {
   return (
-    <Card>
+    <Card className="weather">
       <Card.Body>
         <Row>
           <Col>
-            <ul>
-              <li>Redondo Beach, CA</li>
-              <li>Sun 22 Nov</li>
-              <li>Clear Skies</li>
-            </ul>
+            <div>
+              <ul>
+                <li>Redondo Beach, CA</li>
+                <li>Sun 22 Nov</li>
+              </ul>
+            </div>
             <div className="current-weather">
+              <h3>Clear Sky</h3>
               <Image src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png" />{" "}
               <strong>23°C</strong>
             </div>
