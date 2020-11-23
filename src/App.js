@@ -1,11 +1,12 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
 import Weather from "./Weather";
 
 export default function App() {
   return (
     <div className="App">
-      <div className="containter">
+      <Container>
         <Weather />
         <footer>
           This app was coded by{" "}
@@ -20,7 +21,7 @@ export default function App() {
             open-source
           </a>
         </footer>
-      </div>
+      </Container>
     </div>
   );
 }
