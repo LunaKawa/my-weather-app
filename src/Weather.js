@@ -25,7 +25,7 @@ export default function Weather() {
             <div className="current-weather">
               <h3>Clear Sky</h3>
               <Image src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png" />{" "}
-              <strong>23°C</strong>
+              <strong className="current-temp">23°C</strong>
             </div>
             <Row>
               <Col className="more-temps">
@@ -41,17 +41,17 @@ export default function Weather() {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col className="divider">
             <div className="weather-attributes">
               <ul>
                 <li>
-                  Wind:<strong>2 m/s</strong>
+                  Wind:<strong> 2 m/s</strong>
                 </li>
                 <li>
                   Humidity:<strong> 15%</strong>
                 </li>
                 <li>
-                  Pressure:<strong>1061 hPa</strong>
+                  Pressure:<strong> 1061 hPa</strong>
                 </li>
               </ul>
             </div>
