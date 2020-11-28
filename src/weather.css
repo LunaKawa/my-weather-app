@@ -1,8 +1,55 @@
-.weather {
-  width: 90%;
+.container {
+  background: blue;
+}
+.weather.card {
+  margin: 20px auto;
+  padding: 10px;
+  width: 60%;
   color: black;
-  border: none;
   border-radius: 25px;
   box-shadow: 9px 11px 5px #0000000d;
   word-break: normal;
+  background: red;
+}
+ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.title {
+  font-size: 30px;
+  font-weight: 500;
+  padding: 5px;
+  margin: 10px;
+}
+li.date {
+  font-size: 25px;
+  font-weight: 300;
+}
+div.current-weather {
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+div.current-weather h3 {
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+div.more-temps {
+  text-align: center;
+  padding: 5px;
+  margin: 0 auto;
+}
+div.more-temps div {
+  display: inline-flex;
+  margin: 10px;
+}
+div.more-temps p {
+  margin: 0;
+}
+div.weather-attributes {
+  text-align: justify;
+  vertical-align: baseline;
+  font-size: 20px;
+  line-height: 3rem;
 }
