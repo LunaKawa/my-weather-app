@@ -11,21 +11,24 @@ export default function Weather() {
   return (
     <Card className="weather">
       <Card.Body>
+        <SearchEngine />
+
+        <div className="title">
+          <ul>
+            <li>Redondo Beach, CA</li>
+            <li className="date">Sun 22 Nov</li>
+          </ul>
+        </div>
+
         <Row>
           <Col>
-            <div>
-              <ul>
-                <li>Redondo Beach, CA</li>
-                <li>Sun 22 Nov</li>
-              </ul>
-            </div>
             <div className="current-weather">
               <h3>Clear Sky</h3>
               <Image src=" https://ssl.gstatic.com/onebox/weather/64/sunny.png" />{" "}
               <strong>23°C</strong>
             </div>
             <Row>
-              <Col>
+              <Col className="more-temps">
                 <div>
                   <p>Feels: 24°C</p>
                 </div>
@@ -39,8 +42,7 @@ export default function Weather() {
             </Row>
           </Col>
           <Col>
-            <SearchEngine />
-            <div>
+            <div className="weather-attributes">
               <ul>
                 <li>
                   Wind:<strong>2 m/s</strong>
