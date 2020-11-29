@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import WeatherData from "./WeatherData";
+import Weather from "./Weather";
 import Conversion from "./Conversion";
 import "./searchengine.css";
 
 export default function SearchEngine() {
-  let [city, setCity] = useState("");
+  let [city, setCity] = useState("Tokyo");
   let [message, showMessage] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    showMessage(<WeatherData name={city} />);
+    showMessage(<Weather name={city} />);
   }
   function updateCity(event) {
     setCity(event.target.value);
