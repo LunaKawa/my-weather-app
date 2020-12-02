@@ -1,3 +1,7 @@
+.container {
+  margin: 0 auto;
+  padding: 0;
+}
 .weather.card {
   background-image: linear-gradient(
     to top,
@@ -7,22 +11,17 @@
   );
   margin: 20px auto;
   padding: 10px;
-  width: 60%;
   color: white;
   border-radius: 25px;
   box-shadow: 9px 11px 5px #0000000d;
   word-break: normal;
-}
-ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
 }
 .title {
   font-size: 30px;
   font-weight: 300;
   padding: 5px;
   margin: 10px;
+  text-align: left;
 }
 li.date {
   font-size: 25px;
@@ -50,14 +49,12 @@ div.more-temps p {
   font-size: 15px;
   font-weight: 600;
 }
-div.weather-attributes {
-  text-align: justify;
-  vertical-align: baseline;
-  font-size: 20px;
-  line-height: 3rem;
-}
 div.weather-attributes ul {
-  padding: 10px;
+  padding-left: 40px;
+  list-style: none;
+  font-size: 20px;
+  line-height: 2;
+  margin: 0px auto;
 }
 div.col.divider {
   border-left: 1px white solid;
