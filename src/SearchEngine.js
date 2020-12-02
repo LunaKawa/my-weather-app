@@ -1,36 +1,39 @@
 import React, { useState } from "react";
-import Weather from "./Weather";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 import Conversion from "./Conversion";
 import "./searchengine.css";
 
 export default function SearchEngine() {
-  let [city, setCity] = useState("Tokyo");
-  let [message, showMessage] = useState("");
+  let [city, setCity] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    showMessage(<Weather name={city} />);
+    alert(`${city}`);
   }
   function updateCity(event) {
     setCity(event.target.value);
   }
 
   return (
-    <div className="searchEngine">
-      <form onSubmit={handleSubmit}>
-        <input
-          className="search"
-          type="search"
-          placeholder="search.."
-          onChange={updateCity}
-        />
-        <button type="button" className="btn btn-outline-light">
-          <i class="fas fa-map-marker-alt"></i>
-          Location
-        </button>
-        <Conversion />
-      </form>
-      <h2>{message}</h2>
-    </div>
+    <Row>
+      <Col className="d-flex justify-content-end">
+        <div className="searchEngine">
+          <form onSubmit={handleSubmit}>
+            <input
+              className="search"
+              type="search"
+              placeholder="search.."
+              onChange={updateCity}
+            />
+            <button type="button" className="btn btn-outline-light">
+              <i class="fas fa-map-marker-alt"></i>
+              Search
+            </button>
+            <Conversion />
+          </form>
+        </div>
+      </Col>
+    </Row>
   );
 }
